@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Explorando Aprendizando em HTMl" />
+    <meta name="author" content="Ákila Ferreira" />
+    <title>Fortuny's Pizzaria</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bem vindo ao Fortuny's Pizzaria</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#sobre"
+              >Sobre a <abbr title="Fortuny's Pizzaria">FP</abbr></a
+            >
+          </li>
+          <li>
+            <a href="#menu">Nosso Menu</a>
+          </li>
+          <li>
+            <a href="horas.html">Horários de Funcionamento</a>
+          </li>
+          <li>
+            <a href="contato.html">Contate-nos</a>
+          </li>
+          <li>
+            <a href="pizza-personalizada.html">Monte sua Pizza</a>
+          </li>
+        </ul>
+      </nav>
+
+      <figure>
+        <img
+          src="img/pizzaria1.jpg"
+          alt="Pizza saindo do forno"
+          title="Pizza Quentinha"
+          width="400"
+          height="267"
+        />
+        <figcaption>Pizza Portuguesa</figcaption>
+      </figure>
+    </header>
+    <hr />
+
+    <main>
+      <article id="sobre">
+        <h2>Sobre a <abbr title="Fortuny's Pizzaria">FP</abbr></h2>
+        <p>
+          Foi Fundada em
+          <time datetime="2022">2022</time> por um Chef que é um
+          <strong>amante de pizzas</strong>🍕🍕. Esperamos que nossa loja
+          adicione um lugar único e interessante para a nossa pequena cidade.
+        </p>
+
+        <aside>
+          <h3>Curiosidade sobre Pizzas</h3>
+          <details>
+            <summary>
+              Quando as pizzas apareceram pela primeira vez no Brasil?
+            </summary>
+            <p>
+              A primeira pizzaria foi aberta no Brasil em
+              <time datetime="1910">1910</time>, com os imigrantes italianos. O
+              bairro para essa recepção foi o Brás, na cidade de São Paulo.
+              Contudo, no início, os brasileiros não haviam aderido tão bem o
+              novo alimento. Só a partir de 1950 que o prato se tornou popular
+              por todo o país. (Source:
+              <cite
+                ><a
+                  href="https://www.pizzaprime.com.br/historia-da-pizza/#:~:text=Como%20dissemos%20anteriormente%2C%20a%20primeira,popular%20por%20todo%20o%20pa%C3%ADs."
+                  target="_blank"
+                  >Pizza Prime</a
+                ></cite
+              >)
+            </p>
+          </details>
+        </aside>
+      </article>
+      <hr />
+
+      <!-- Nosso Menu -->
+      <article id="menu">
+        <h2>Nosso Menu</h2>
+
+        <table border="1px">
+          <caption>
+            Nossas Pizzas
+          </caption>
+
+          <thead>
+            <tr>
+              <th>Pizzas</th>
+              <th scope="col">Tamanho</th>
+              <th scope="col">Preço</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row" rowspan="3">Peperone</th>
+              <td>P</td>
+              <td>R$10</td>
+            </tr>
+
+            <tr>
+              <td>M</td>
+              <td>R$18</td>
+            </tr>
+
+            <tr>
+              <td>G</td>
+              <td>R$25</td>
+            </tr>
+
+            <tr>
+              <th scope="row" rowspan="3">Mussarela</th>
+              <td>P</td>
+              <td>R$12</td>
+            </tr>
+
+            <tr>
+              <td>M</td>
+              <td>R$22</td>
+            </tr>
+            <tr>
+              <td>G</td>
+              <td>R$35</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Batata &amp; Molhos R$12</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <br />
+        <p>
+          <a href="#">Voltar para o Topo</a>
+        </p>
+      </article>
+    </main>
+
+    <hr />
+    <footer>
+      <p>Copyright &copy; Fortuny's Pizzaria</p>
+    </footer>
+  </body>
+</html>

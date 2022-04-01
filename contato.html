@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Página de Contato</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contate-nos</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Página Principal</a>
+          </li>
+          <li>
+            <a href="horas.html">Horários de Funcionamento</a>
+          </li>
+        </ul>
+      </nav>
+
+      <figure>
+        <img
+          src="img/pizzaria3.jpg"
+          alt="Pizza Pequena"
+          title="Nossa Deliciosa Pizza"
+          width="400"
+          height="260"
+        />
+        <figcaption>Fortuny's Pizzaria</figcaption>
+      </figure>
+    </header>
+
+    <hr />
+
+    <main>
+      <section>
+        <h2>Formulário de Contato</h2>
+
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Mande uma mensagem:</legend>
+            <p>
+              <label for="nome">Nome:</label>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Seu nome"
+                required
+              />
+            </p>
+            <p>
+              <label for="email">Seu e-mail:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Seu e-mail"
+                required
+              />
+            </p>
+            <p>
+              <label for="mensagem">Sua Mensagem:</label>
+              <br />
+              <textarea
+                name="mensagem"
+                id="mensagem"
+                cols="30"
+                rows="10"
+                placeholder="Digite sua mensagem aqui"
+              ></textarea>
+            </p>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar Formulário</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section>
+        <h2>Nosso Endereço</h2>
+        <address>
+          Rua Conselheiro Alves Silva, 213<br />
+          Água Doce do Norte, CEP: 29820-000
+          <br /><br />
+          Nosso Número: <a href="tel:+5555555555">27 9999-9999</a>
+        </address>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <p>Copyright &copy; Fortuny's Pizzaria</p>
+    </footer>
+  </body>
+</html>

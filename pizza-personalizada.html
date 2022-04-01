@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Monte sua Pizza!</title>
+  </head>
+  <body>
+    <!-- TYPE = TEXT -->
+    <form action="https://httpbin.org/get" method="get">
+      <h1>Monte sua Pizza!</h1>
+
+      <!-- TYPE = "NUMBER"-->
+      <section>
+        <label for="quantidade">Quantas Pizzas você quer?</label>
+        <input type="number" name="quantidade" id="quantidade" />
+      </section>
+      <hr />
+
+      <section>
+        <label for="proteina">Que tipo de proteína você gostaria?</label>
+        <input type="text" name="proteina" id="proteina" />
+      </section>
+      <hr />
+
+      <!--TYPE = "RANGE"-->
+      <section>
+        <label for="assada">Como você quer sua pizza assada?</label>
+        <br />
+        <span>Menos</span>
+        <input
+          type="range"
+          name="assada"
+          id="assada"
+          value="3"
+          min="1"
+          max="5"
+        />
+        <span>Mais</span>
+      </section>
+      <hr />
+
+      <!-- TYPE = "CHECKBOX"-->
+      <section>
+        <span>Escolha os complementos:</span>
+        <br />
+        <input type="checkbox" name="complemento" id="queijo" value="queijo" />
+        <label for="queijo">Queijo</label>
+        <input type="checkbox" name="complemento" id="tomate" value="tomate" />
+        <label for="tomate">Tomate</label>
+        <input type="checkbox" name="complemento" id="cebola" value="cebola" />
+        <label for="cebola">Cebola</label>
+      </section>
+      <hr />
+
+      <!-- TYPE = "RADIO"-->
+      <section>
+        <span>Gostaria de adicionar pimentão?</span>
+        <br />
+        <input type="radio" name="cheese" id="sim" value="sim" />
+        <label for="sim">Sim</label>
+        <input type="radio" name="cheese" id="não" value="não" />
+        <label for="não">Não</label>
+      </section>
+      <hr />
+
+      <!--SELECT (LISTA SUSPENSA)-->
+      <section>
+        <label for="massa">Que tipo de massa você gostaria?</label>
+        <select name="massa" id="massa">
+          <option value="crocante">Crocante</option>
+          <option value="macia">Macia</option>
+        </select>
+      </section>
+      <hr />
+
+      <!-- DATALIST-->
+      <section>
+        <label for="molho">Que tipo de molho você quer?</label>
+        <input list="molhos" id="molho" name="molho" />
+        <datalist id="molhos">
+          <option value="Ketchup"></option>
+          <option value="Barbecue"></option>
+          <option value="Mustarda"></option>
+        </datalist>
+
+        <!-- TEXT AREA-->
+      </section>
+      <hr />
+      <section>
+        <label for="adicional">Algo a mais? Digite aqui:</label>
+        <br />
+        <textarea id="adicional" name="adicional" rows="3" cols="40"></textarea>
+      </section>
+      <hr />
+
+      <!-- SUBMIT-->
+      <section>
+        <!--Add your code below-->
+        <input type="submit" value="Enviar" />
+      </section>
+    </form>
+    <br />
+    <a href="index.html"> PÁGINA PRINCIPAL </a>
+  </body>
+</html>
